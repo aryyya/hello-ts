@@ -29,7 +29,7 @@ interface IGreeterStyledProps {
   textSize?: number
 }
 
-const GreeterStyled = styled<IGreeterStyledProps, 'div'>('div')`
+const GreeterStyled = styled.div<IGreeterStyledProps>`
   font-family: sans-serif;
   font-size: 1.25rem;
   color: orange;
@@ -40,7 +40,7 @@ interface INameProps {
   gender: Gender
 }
 
-const Name = styled<INameProps, 'span'>('span')`
+const Name = styled.span<INameProps>`
   font-weight: bold;
   text-decoration: underline;
   color: ${({ gender }) =>
