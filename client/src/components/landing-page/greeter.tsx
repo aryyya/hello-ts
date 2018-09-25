@@ -7,8 +7,8 @@ export enum Gender {
 }
 
 interface IGreeterProps {
-  name: string,
-  gender: Gender
+  readonly name: string,
+  readonly gender: Gender
 }
 
 export default class Greeter extends React.Component<IGreeterProps> {
@@ -25,8 +25,8 @@ export default class Greeter extends React.Component<IGreeterProps> {
 }
 
 interface IGreeterStyledProps {
-  textColor?: string,
-  textSize?: number
+  readonly textColor?: string,
+  readonly textSize?: number
 }
 
 const GreeterStyled = styled.div<IGreeterStyledProps>`
@@ -37,7 +37,7 @@ const GreeterStyled = styled.div<IGreeterStyledProps>`
 `
 
 interface INameProps {
-  gender: Gender
+  readonly gender: Gender
 }
 
 const Name = styled.span<INameProps>`
