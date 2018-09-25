@@ -1,5 +1,4 @@
 import * as React from 'react'
-
 import Greeter, { Gender } from './components/landing-page/greeter'
 
 class App extends React.Component {
