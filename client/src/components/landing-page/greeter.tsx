@@ -44,6 +44,10 @@ const Name = styled<INameProps, 'span'>('span')`
   font-weight: bold;
   text-decoration: underline;
   color: ${({ gender }) =>
-    gender === Gender.FEMALE ? 'blue' : 'red'
+    gender === Gender.FEMALE
+      ? 'blue'
+      : gender === Gender.MALE
+        ? 'red'
+        : 'black'
   };
 `
